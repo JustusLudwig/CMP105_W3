@@ -15,6 +15,7 @@ public:
 	void update(float dt);
 	void render();
 
+
 private:
 	// Default functions for rendering to the screen.
 	void beginDraw();
@@ -22,5 +23,9 @@ private:
 
 	// Default variables for level class.
 	sf::RenderWindow* window;
-	Input* input;
+	Input* input;	
+	
+	sf::CircleShape circle;
+	float speedx;
+	float speedy;
 };
